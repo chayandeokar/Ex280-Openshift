@@ -35,8 +35,6 @@ _jobs
 To `remove every user from creating a new project`, use the following commands:
 
 ```shell
-oc describe clusterrolebindings.rbac.authorization.k8s.io | grep self-pro
-oc describe clusterrolebindings.rbac.authorization.k8s.io self-provisioner
 oc adm policy remove-cluster-role-from-group self-provisioner system:authenticated:oauth
 ```
 

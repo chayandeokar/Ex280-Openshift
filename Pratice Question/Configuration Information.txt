@@ -1,0 +1,35 @@
+Unless otherwise specified, the password for all users and services is: bolero137
+
+The password for the OpenShift kubeadmin virtual user is provided in the file /root/kubeadmin-password on the administrator workbench system (see below).
+
+Documentation
+    Offline product documentation is available here: http://rhgls.domainXX.example.com/docs/
+
+
+
+Exam Systems
+You will be working with the following virtual systems for this exam: 
+System Role	System
+Administrator workbench	workbench.domainXX.example.com
+Container registry	registry.domainXX.example.com
+Load balancer	lb.domainXX.example.com
+OCP master	master0.domainXX.example.com
+OCP master	master1.domainXX.example.com
+OCP master	master2.domainXX.example.com
+OCP worker	worker0.domainXX.example.com
+OCP worker	worker1.domainXX.example.com
+The IP addresses for these systems are set statically. Do not change these settings.
+
+
+Workbench
+    You have SSH access to the administrator workbench system -- you can log in as either the root or opsadm users.
+    The OpenShift client tools and other ancillary programs (oc, jq, yq, jsonlint) have been installed on this system with the expectation that you will do most of your work there as the opsadm user.
+    X.509 certificate authentication for the OpenShift system:admin account has been preconfigured for both the root and opsadm users.
+    If you need to install additional software, the necessary yum repositories have been preconfigured for you.
+
+OpenShift Cluster
+    A cluster of machines running Red Hat OpenShift Container Platform v4.10 has been installed and preconfigured for you.
+    API endpoint: https://api.domainXX.example.com:6443
+    Web console: https://console-openshift-console.apps.domainXX.example.com
+
+
